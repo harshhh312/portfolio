@@ -68,6 +68,7 @@ function Navbar() {
         {/* Mobile Button */}
 
         <button
+          type="button"
           className="mobile-menu-button"
           onClick={() =>
             setMenuOpen(!menuOpen)
@@ -85,8 +86,14 @@ function Navbar() {
 
       </div>
 
-
-
+      {/* Mobile Menu */}
+      <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+        <a href="#about" onClick={closeMenu}>About</a>
+        <a href="#projects" onClick={closeMenu}>Projects</a>
+        <a href="#education" onClick={closeMenu}>Education</a>
+        <a href="#contact" onClick={closeMenu}>Contact</a>
+        <a href="https://github.com/harshhh312" target="_blank" rel="noreferrer" onClick={closeMenu}>GitHub ↗</a>
+      </div>
 
     </nav>
   );

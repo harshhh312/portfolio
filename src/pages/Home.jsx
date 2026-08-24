@@ -1,6 +1,6 @@
-  import Navbar from "../components/Navbar";
-  import "../styles/home.scss";
-  import Reveal from "../components/Reveal";
+import Navbar from "../components/Navbar";
+import "../styles/home.scss";
+import Reveal from "../components/Reveal";
   const projects = [
     {
       number: "01",
@@ -165,9 +165,8 @@
             </p>
 
             <h1>
-              I build
-              <span> intelligent </span>
-              software.
+                I turn data
+                <span> into decisions.</span>
             </h1>
 
             <p className="hero-description">
@@ -208,7 +207,7 @@
               <span>•</span>
 
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/harsh-chaudhari312"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -311,14 +310,16 @@
 
                   </div>
 
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="project-link"
-                  >
-                    View GitHub ↗
-                  </a>
+                  {project.github !== "#" && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="project-link"
+                    >
+                      View GitHub ↗
+                    </a>
+                  )}
 
                 </div>
 
@@ -482,14 +483,16 @@
 
                   </div>
 
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="project-link"
-                  >
-                    GitHub ↗
-                  </a>
+                  {project.github !== "#" && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="project-link"
+                    >
+                      GitHub ↗
+                    </a>
+                  )}
 
                 </div>
 
