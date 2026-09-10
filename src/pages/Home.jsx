@@ -498,26 +498,16 @@ import Reveal from "../components/Reveal";
       <div className="about-text">
 
         <p className="about-lead">
-          I'm an Artificial Intelligence & Data Science
-          graduate who enjoys turning ideas into working
-          software.
-        </p>
+  I'm an Artificial Intelligence & Data Science graduate focused on building practical AI systems and reliable backend applications.
+</p>
 
-        <p>
-          My interests sit at the intersection of software
-          engineering, artificial intelligence and data.
-          I've built applications involving RAG pipelines,
-          machine learning, APIs and full-stack web
-          development.
-        </p>
+<p>
+  I enjoy working at the intersection of software engineering and artificial intelligence — especially RAG pipelines, LLM-powered applications, and scalable APIs. I've built end-to-end systems using FastAPI, LangChain, Ollama, vector databases, and modern web technologies.
+</p>
 
-        <p>
-          I'm currently focused on strengthening my
-          problem-solving, backend engineering and
-          AI application development skills while looking
-          for opportunities where I can learn, contribute
-          and grow as a developer.
-        </p>
+<p>
+  I'm currently looking for opportunities where I can contribute to real-world AI products, improve my engineering skills, and grow as an AI / Backend engineer.
+</p>
 
       </div>
 
