@@ -2,141 +2,114 @@ import Navbar from "../components/Navbar";
 import "../styles/home.scss";
 import Reveal from "../components/Reveal";
   const projects = [
-    {
-      number: "01",
-      featured: true,
-      title: "Customer Support AI Agent",
-      category: "AI / BACKEND",
+  {
+    number: "01",
+    featured: true,
+    title: "Customer Support AI Agent",
+    category: "AI / BACKEND",
 
-      description:
-        "An AI-powered customer support system that uses hybrid RAG and LLM orchestration to generate grounded, context-aware responses from a company's knowledge base.",
+    description:
+      "An AI-powered customer support system that uses a Hybrid RAG pipeline (BM25 + ChromaDB + Reciprocal Rank Fusion) to generate accurate, context-aware responses from a company's knowledge base.",
 
-      problem:
-        "Traditional support systems struggle to answer questions accurately when information is spread across different documents and sources.",
+    problem:
+      "Traditional support systems struggle to answer questions accurately when information is spread across multiple documents and systems.",
 
-      solution:
-        "Built a retrieval-augmented support pipeline that retrieves relevant information, generates an answer with an LLM, and uses a self-correction layer to improve response quality.",
+    solution:
+      "Built a modular FastAPI + LangChain system with hybrid retrieval, persistent conversation memory, CRM lookup, and LLM-based response evaluation for higher reliability.",
 
-      technologies: [
-        "Python",
-        "FastAPI",
-        "LangChain",
-        "Chroma",
-        "Sentence Transformers",
-        "Ollama",
-      ],
+    technologies: [
+      "Python",
+      "FastAPI",
+      "LangChain",
+      "Ollama",
+      "ChromaDB",
+      "PostgreSQL",
+      "Docker",
+      "Celery",
+      "Redis",
+    ],
 
-      features: [
-        "Hybrid RAG pipeline",
-        "Vector-based retrieval",
-        "LLM response generation",
-        "Self-correction",
-        "FastAPI backend",
-      ],
+    features: [
+      "Hybrid RAG (BM25 + Vector + RRF)",
+      "Persistent conversation memory",
+      "CRM lookup integration",
+      "LLM response evaluation",
+      "Dockerized architecture",
+      "Background task processing",
+    ],
 
-      github:
-        "https://github.com/harshhh312/Customer-support-aiagent",
-    },
+    github: "https://github.com/harshhh312/Customer-support-aiagent",
+  },
 
-    {
-      number: "02",
-      featured: true,
-      title: "Renewal Risk Intelligence Engine",
-      category: "AI / DATA",
+  {
+    number: "02",
+    featured: true,
+    title: "LLM Document Question Answering System",
+    category: "AI / RAG",
 
-      description:
-        "An AI-augmented system that combines structured customer data, usage patterns, support information and unstructured CSM notes to identify accounts at risk of renewal.",
+    description:
+      "A full-stack RAG application that lets users upload documents and ask questions with context-aware answers. Supports both local LLMs (Ollama) and Google Gemini.",
 
-      problem:
-        "Customer success teams often have information spread across multiple data sources, making it difficult to identify renewal risks early.",
+    problem:
+      "Extracting accurate answers from multiple document formats (PDF, DOCX, PPTX, Excel, YouTube, etc.) is slow and error-prone.",
 
-      solution:
-        "Built a unified risk-analysis pipeline that reconciles multiple data sources, calculates a weighted risk score and generates plain-English explanations for why an account may be at risk.",
+    solution:
+      "Built a multi-format document processing pipeline with semantic search, summarization, mind-map generation, and a responsive web interface with PDF viewer.",
 
-      technologies: [
-        "Python",
-        "Pandas",
-        "Machine Learning",
-        "RAG",
-        "NLP",
-      ],
+    technologies: [
+      "FastAPI",
+      "Ollama",
+      "Gemini",
+      "Custom RAG",
+      "JavaScript",
+      "HTML",
+      "CSS",
+    ],
 
-      features: [
-        "Multi-source data reconciliation",
-        "Risk scoring",
-        "Customer segmentation",
-        "AI-generated explanations",
-        "Actionable insights",
-      ],
+    features: [
+      "Multi-format document support",
+      "Semantic search",
+      "Document summarization",
+      "Mind-map generation",
+      "PDF viewer with highlighting",
+      "Switchable LLM providers",
+    ],
 
-      github: "#",
-    },
+    github: "https://github.com/harshhh312/LLM-Document-QA-System",
+  },
 
-    {
-      number: "03",
-      featured: false,
-      title: "Credit Card Fraud Detection",
-      category: "MACHINE LEARNING",
+  {
+    number: "03",
+    featured: false,
+    title: "Credit Card Fraud Detection",
+    category: "MACHINE LEARNING",
 
-      description:
-        "A machine learning system designed to identify potentially fraudulent credit card transactions while handling the challenges of imbalanced financial data.",
+    description:
+      "Machine learning system to detect fraudulent credit card transactions using historical transaction data.",
 
-      problem:
-        "Fraud detection datasets are highly imbalanced, making accuracy alone a poor indicator of model performance.",
+    problem:
+      "Fraudulent transactions are rare and hard to detect accurately without creating too many false positives.",
 
-      solution:
-        "Built and evaluated a classification pipeline with a focus on metrics such as precision, recall and F1-score to better evaluate fraudulent transaction detection.",
+    solution:
+      "Performed data preprocessing, feature engineering and trained classification models evaluated using Precision, Recall and F1-score.",
 
-      technologies: [
-        "Python",
-        "Pandas",
-        "Scikit-learn",
-        "Machine Learning",
-      ],
+    technologies: [
+      "Python",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+    ],
 
-      features: [
-        "Data preprocessing",
-        "Classification",
-        "Imbalanced data analysis",
-        "Model evaluation",
-      ],
+    features: [
+      "Data preprocessing & EDA",
+      "Feature engineering",
+      "Classification models",
+      "Precision / Recall / F1 evaluation",
+    ],
 
-      github:
-        "https://github.com/harshhh312/CDFD",
-    },
-
-    {
-      number: "04",
-      featured: false,
-      title: "Real-Time Chat Application",
-      category: "FULL STACK",
-
-      description:
-        "A real-time messaging application built with React and Firebase, supporting user discovery, messaging and image sharing.",
-
-      problem:
-        "Wanted to build a practical full-stack application that handled real-time communication and user interactions.",
-
-      solution:
-        "Built a responsive React application backed by Firebase for authentication, real-time data and messaging functionality.",
-
-      technologies: [
-        "React",
-        "JavaScript",
-        "Firebase",
-      ],
-
-      features: [
-        "Real-time messaging",
-        "User search",
-        "Image sharing",
-        "Firebase backend",
-      ],
-
-      github:
-        "https://github.com/harshhh312/chatproject",
-    },
-  ];
+    github: "https://github.com/harshhh312/Credit-Card-Fraud-Detection",
+  },
+];
   function Home() {
     return (
       <main className="home">
